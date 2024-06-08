@@ -2,7 +2,10 @@ import cv2
 import torch
 from PIL import Image
 
+#train parameters for best.pt model
 #python train.py --img 640 --batch 32 --epochs 100 --data data.yaml --weights yolov5s.pt
+#check https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/#3-select-a-model
+
 #load model(enter the path to the best.pt file)
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt', force_reload=True)
 
