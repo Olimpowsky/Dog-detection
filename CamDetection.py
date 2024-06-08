@@ -3,8 +3,8 @@ import torch
 from PIL import Image
 
 #python train.py --img 640 --batch 32 --epochs 100 --data data.yaml --weights yolov5s.pt
-#load model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/jakub/Desktop/DogDetectionYOLO-master/best.pt', force_reload=True)
+#load model(enter the path to the best.pt file)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt', force_reload=True)
 
 class_names= [
     'Chihuahua', 'Japanese_spaniel', 'Maltese_dog', 'Pekinese', 'Shih-Tzu', 'Blenheim_spaniel',
