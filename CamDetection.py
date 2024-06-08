@@ -53,8 +53,8 @@ def detect(frame):
             cv2.putText(frame, confidence_text, (int(x1), int(y1 - 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
     return frame
 
-#choose video source
-cap = cv2.VideoCapture(2) 
+#choose video source(webcam is usually mark as 0 if it isn't, edit and enter next number 1, 2, 3 etc)
+cap = cv2.VideoCapture(0) 
 
 while True:
     ret, frame = cap.read()
