@@ -7,7 +7,7 @@ from PIL import Image
 #check https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/#3-select-a-model
 
 #load model(enter the path to the best.pt file)
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/jakub/Desktop/msi/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='Your_path_to_the_best.pt', force_reload=True)
 
 class_names= [
     'Chihuahua', 'Japanese_spaniel', 'Maltese_dog', 'Pekinese', 'Shih-Tzu', 'Blenheim_spaniel',
